@@ -49,6 +49,7 @@ namespace Console_shaper
             {
                 // 出力
                 Trace.WriteLine(e.Message);
+                Console.ReadKey();
             }
             finally
             {
