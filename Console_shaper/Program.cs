@@ -74,6 +74,7 @@ namespace Console_shaper
                 catch (Exception ex)
                 {
                     Trace.WriteLine(ex.Message);
+                    Console.ReadKey();
                 }
                 finally
                 {
