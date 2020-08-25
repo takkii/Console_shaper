@@ -69,12 +69,15 @@ namespace Console_shaper
                     foreach (var y in orderList)
                     {
                         Console.WriteLine(y);
-                        Console.ReadKey();
                     }
                 }
                 catch (Exception ex)
                 {
                     Trace.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    Console.ReadKey();
                 }
             }
         }
