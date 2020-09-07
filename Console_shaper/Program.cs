@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Linq;
 
@@ -11,7 +11,7 @@ namespace Console_shaper
             try
             {
                 // 宣言
-                var dt = DateTime.Now;           
+                var dt = DateTime.Now;
                 const string str = "令和";
                 const string str2 = "R0";
 
@@ -56,13 +56,13 @@ namespace Console_shaper
                 try
                 {
                     // 宣言
-                    const string ver = "1.0.1";
-                    const string himekuriShaperVersion = "日めくりの数え番号：" + ver;
+                    const string RivisionNumber = "1.0.2R1";
+                    const string himekuriShaperVersion = "日めくりの数え番号：";
 
                     // 安定ソート
                     var versioner = new[]
                     {
-                        himekuriShaperVersion
+                        himekuriShaperVersion + RivisionNumber
                     };
 
                     var orderList = versioner.OrderBy(y => y);
@@ -85,4 +85,3 @@ namespace Console_shaper
         }
     }
 }
-
